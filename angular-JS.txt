@@ -1,0 +1,113 @@
+lazy Loading -->
+	By default, NgModules are eagerly loaded, which means that as soon as the app loads, so do all the NgModules, 
+	whether or not they are immediately necessary. For large apps with lots of routes, consider lazy loading—a design 
+	pattern that loads NgModules as needed. Lazy loading helps keep initial bundle sizes smaller, which in turn helps 
+	decrease load times.
+
+	To lazy load Angular modules, use loadChildren (instead of component) in your AppRoutingModule routes configuration as follows.
+	const routes: Routes = [
+	  {
+	    path: 'items',
+	    loadChildren: () => import('./items/items.module').then(m => m.ItemsModule)
+	  }
+	];
+
+
+ngxtranslate -->
+	NGX-Translate is an internationalization library for Angular. 
+	It lets you translate for your content in different languages and switch between them easily.
+
+
+Abstraction Vs Encapsulation -->
+	Abstraction: is the concept of object-oriented programming that "shows" only essential attributes and "hides" unnecessary 
+	information. The main purpose of abstraction is hiding the unnecessary details from the users. Abstraction is selecting data 
+	from a larger pool to show only relevant details of the object to the user. It helps in reducing programming complexity and 
+	efforts.
+
+	Encapsulation: As in encapsulation, the data in a class is hidden from other classes, so it is also known as data-hiding.
+	Encapsulation is defined as the wrapping up of data under a single unit. It is the mechanism that binds together code and 
+	the data it manipulates.
+
+		Abstraction						Encapsulation
+	-> Abstraction is useful at the design level.Means during -> Encapsulation is useful at the implementation level. means while
+	   design level u will get to know which functionality is    implementation we get to know which data is to be hidden.
+	   shown and what all implementation is hidden.
+	-> Its implemented using abstract classes and interfaces  -> Its implemented using access modifiers like public,private,protected
+	-> It focusses on external outlook.			  -> It focusses on internal working.
+
+
+Functions in javaScripts -->
+	->Named functions: Functions has unique names, these can be used whenever required.
+		ex: function addNums(a, b) { return a+b }
+
+	->Anonymous functions: these functions are declared without any named identifier to refer it. It can be used only one place 
+	  when it is called immediately after defined or passed as an arguement to a function. it can be stored in a variable also.
+		ex: var add = function(a, b){ return a+b }; add(1,2);
+
+	->Self Invoking functions: self-invoking functions are anonymous functions which are called right after it has been defined.
+	  code can be executed once, without declaring any global variables. No reference is maintained to this function, not even
+	  to its return value.
+		syntax: (function(){ //body } ()); or (function(){ //body})();
+
+
+Arrow Functions -->
+	Arrow functions allow us to write shortest function syntax. ex: var mesg = () => { return "this is arroe function" }
+	Arrow functions return the value by default, so we no need to write return statement. If a function has only one statement
+	that returns a value, the flower brackets and return statement can be removed.  ex: var msg = () => "this is arrow fun"
+	While Passing the parameters, parameters are passed in brackets, if single parameter is there then the brackets can be skipped.
+
+	     Regular function						   Arrow function
+	-> It will have its own execution context.		     -> It will not have its own execution context.
+	->It can be used as a constructor, when the function is      -> it cannot be used as a constructor.
+	   called with new key word new instance of that function type
+	   will be created.
+	-> It has special key word arguements, it contains list of    -> It doesn't have this special key word arguements.but it accesses
+	    arguements that are passed.					 the arguements of its outer function.
+	-> If there is no return statement or expression after return -> If the arrow function has one expression then u can omit the
+	   statement missing then regular functions returns undefined    curly braces and the expression the expression is implicitely
+	   by default.							 returned.
+	->this value is there					      -> they do not have own this value, always its inherited from 
+									 its enclosing scope(or outer function)
+
+
+IIFE Function -->
+	An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined.
+	it is also called as self invoking anonymous function.
+	->uses
+	  - avoid populating global namespace, variables will be discarded after the function is executed.
+
+
+Interface -->
+	An interface is just a syntax that an entity should adhere to or conform to or follow. It can also be said as syntactical
+	contract that an entity should confirm. or it can be said as the shape of the entity. or blueprint.
+	Interfaces define properties, methods, and events, which are the members of the interface. Interfaces contain only the 
+	declaration of the members.
+
+	abstract class ->
+		Abstract classes are mainly for inheritance where other classes may derive from them. We cannot create an instance of
+		 an abstract class.
+
+		An abstract class typically includes one or more abstract methods or property declarations. The class which extends 
+		the abstract class must define all the abstract methods.
+
+		Abstract class 							Interface
+	->Abstract class can have abstract and non-abstract methods  ->Interface can have only abstract methods
+	-> It doesn't support multiple inheritance		     -> Interface support multiple inheritance.
+	-> It can be extended using extends key word 		     -> It can be implemented using implements.
+	->it extends other java classes and also implements	     -> it extends only other java interfaces
+	  other java interfaces
+	-> It has access modifiers public, private, protected        -> it do not have accessmodifiers and its public by default.
+	-> cand declare constructor and destructor 		     -> cannot have constructor and destructor
+
+
+Exceptional Handling -->
+	The try statement lets you test a block of code for errors.
+
+	The catch statement lets you handle the error.
+
+	The throw statement lets you create custom errors.
+
+	The finally statement lets you execute code, after try and catch, regardless of the result.
+
+	In general error is which nobody can control or guess when it occurs.Exception can be guessed and can be handled
+	Exceptions are those which can be handled at the run time whereas errors cannot be handled.
