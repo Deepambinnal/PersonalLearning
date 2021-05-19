@@ -1,3 +1,12 @@
+ --> Advantage of OOPs over Procedure-oriented programming language
+    1) OOPs makes development and maintenance easier, whereas, in a procedure-oriented programming language, it is not easy to manage if 
+    code growsas project size increases.
+
+    2) OOPs provides data hiding, whereas, in a procedure-oriented programming language, global data can be accessed from anywhere.
+
+    3) OOPs provides the ability to simulate real-world event much more effectively. We can provide the solution of real word problem 
+    if we are using the Object-Oriented Programming language.
+ 
  -->Object Oriented Programming is considered as a design methodology for building non-rigid software. In OOPS, every logic is written to get our 
     work done, but represented in form of Objects. OOP allows us to break our problems into small unit of work that is represented via objects and 
     their functions. We build functions around  objects.
@@ -25,6 +34,8 @@
     consist of a name, attributes, and operations. Considering the above example, the Mobile can be a class, which has some attributes like 
     Profile Type, IMEI Number, Processor, and some more. It can have operations like Dial, Receive and SendMessage.
     Or we can say a class is a structure that describes the object.
+
+    Collection of objects is called class. It is a logical entity.
 
     Suppose a person is a class, it has attributes like name, age, and functionalities like walk, eat, run. And instances of this class are 
     different persons.
@@ -101,7 +112,9 @@
     Polymorphism can be defined as the ability of using the same name for doing different things. More precisely we say it as 'many forms 
     of single entity'. This play a vital role in the concept of OOPS.
 
-    when we think of a person's role, he can be father, husband, brother.
+    function area which calculates the area of shape, so like wise area of triangle, cirlce, rectangle.
+
+    when we think of a person's role, he can be father, husband, brother. and a capsule, it is wrapped with different medicines.
 
     Let's say Samsung mobile has a 5MP camera available i.e. – it is having a functionality of CameraClick(). Now same mobile is having Panorama
      mode available in camera, so functionality would be same but with mode. This type is said to be Static polymorphism or Compile time 
@@ -257,3 +270,9 @@
                 Console.WriteLine("Dial a number");  
         }     
     }  
+
+
+ -->   What is the difference between an object-oriented programming language and object-based programming language?
+        Object-based programming language follows all the features of OOPs except Inheritance. JavaScript and VBScript are 
+        examples of object-based programming languages.
+
