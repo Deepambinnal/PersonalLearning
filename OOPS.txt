@@ -35,7 +35,7 @@
     Profile Type, IMEI Number, Processor, and some more. It can have operations like Dial, Receive and SendMessage.
     Or we can say a class is a structure that describes the object.
 
-    Collection of objects is called class. It is a logical entity.
+    Collection of objects is called class. It is a logical entity, where as an object is a physical entity, it has storage memory space.
 
     Suppose a person is a class, it has attributes like name, age, and functionalities like walk, eat, run. And instances of this class are 
     different persons.
@@ -201,7 +201,7 @@
 
         Animal class is inherited by cat and dog.
 
-        mammals class is inherited by humann
+        mammals class is inherited by humans, and animals
 
     ->Hybrid inheritance
         Single, Multilevel, & hierarchal inheritance all together construct a hybrid inheritance.
